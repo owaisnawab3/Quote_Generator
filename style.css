@@ -1,0 +1,145 @@
+/* //=====================//GOOGLE_FONT//========================// */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    /* font-family: "Roboto", serif; */
+    /* font-family: "Playfair Display", serif; */
+}
+
+body{
+    background: rgb(42, 42, 42);
+}
+
+/* //======================//QUOTE_BODY//=====================// */
+
+.Quote-Container{
+    background: #fff;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Quote-Container h1{
+    font-size: 35px;
+    color: #000;
+    font-family: "Playfair Display", serif;
+}
+
+.Quote-Container h1::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    /* bottom: 100px; */
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Quote-Container p{
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+.Quote-Container h4{
+    text-align: end;
+}
+
+.Quote_Btn{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.New_Quote_Btn{
+    color: #fff;
+    background: rgb(23, 124, 229);
+    /* background: rgb(7, 137, 188); */
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.New_Quote_Btn:hover{
+    background : rgb(6, 93, 187);
+}
+
+.Github_Link{
+    color : rgb(23, 124, 229);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid skyblue;
+}
+
+.Github_Link:hover{
+    background: rgb(23, 124, 229);
+    /* background: rgb(7, 137, 188); */
+    color: #fff;
+}
+
+.Github_Link i{
+    padding-right: 5px;
+}
+
+/* //==================//RESPONSIVE_DESIGN//==================// */
+
+@media (max-width: 650px) {
+    /* .Quote-Container{
+        max-height: 100%;
+        height: 500px;
+    } */
+
+    .Quote-Container h1{
+        font-size: 25px;
+    }
+
+    .Quote-Container p{
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .Quote-Container h4{
+        font-size: 14px;
+    }
+
+    .New_Quote_Btn{
+        color: #fff;
+        background: skyblue;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .Github_Link{
+        color: skyblue;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 2px solid skyblue;
+        font-size: 15px;
+    }
+    
+    .Github_Link i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+}
